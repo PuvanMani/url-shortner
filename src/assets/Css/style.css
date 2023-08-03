@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+nav ul {
+    width: 50%;
+}
+
+nav h1 {
+    width: 20%;
+}
+
+nav h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.svg-container {
+    position: relative;
+    width: 315px;
+    height: 100%;
+    background-color: #DC3DB9;
+}
+
+.second {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+}
+
+
+.box {
+    width: 280px;
+    height: 380px;
+
+}
+
+.box-color1 {
+    background-color: #C71EA2;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.box-color2 {
+    background-color: #7D0562;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main-pic {
+    display: flex;
+    width: 350px;
+    height: 450px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.image-contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-contain img {
+    width: 300px;
+}
+
+.main-content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 60%;
+}
+
+.gradient {
+    background: linear-gradient(15deg, #7D0562 10%, #C71EA2 30.86%, rgba(255, 121, 226, 0.47) 72.42%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-content-left span {
+    color: #7D0562;
+}
+
+.main-content h1 {
+    font-size: 60px;
+}
+
+.main-content p {
+    font-size: 20px;
+}
+
+.main-btn {
+    margin-left: 20px;
+    background-color: #7D0562;
+    border: 1px solid #7D0562;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: #FFF;
+    color: #7D0562;
+    border: 1px solid #7D0562;
+    transition: .6s;
+}
+
+.contact {
+    background-color: #DC3DB9;
+    width: 100%;
+}
+
+input [type="input"] {
+    width: 100%;
+}
