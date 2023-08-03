@@ -92,6 +92,7 @@ const ContactForm = () => {
                                 {errorMsg}
                             </div>
                             <div className="form-group">
+                                <label>Name</label>
                                 <input
                                     name="name"
                                     type="text"
@@ -103,6 +104,7 @@ const ContactForm = () => {
                                 />
                             </div>
                             <div className="form-group">
+                                <label>Mobile</label>
                                 <input
                                     name="mobile"
                                     type="text"
@@ -114,18 +116,9 @@ const ContactForm = () => {
                                     onChange={(e) => handleChange(e)}
                                 />
                             </div>
+
                             <div className="form-group">
-                                <input
-                                    name="company"
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Company"
-                                    value={contactData.company || ""}
-                                    onChange={(e) => handleChange(e)}
-                                    onBlur={handleBlur}
-                                />
-                            </div>
-                            <div className="form-group">
+                                <label>Email</label>
                                 <input
                                     name="email"
                                     type="email"
@@ -137,6 +130,7 @@ const ContactForm = () => {
                                 />
                             </div>
                             <div className="form-group">
+                                <label>Message</label>
                                 <textarea
                                     name="message"
                                     type="text"
@@ -149,11 +143,7 @@ const ContactForm = () => {
                                 />
                             </div>
                             <p className="text-right mb-0">
-                                <input
-                                    type="submit"
-                                    className="btn btn-primary"
-                                    value="Submit Now"
-                                />
+                                <button className="submit-btn">Send</button>
                             </p>
                         </>
                     ) : (

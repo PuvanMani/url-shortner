@@ -7,6 +7,7 @@ function Contact() {
     return (
         <div className="main-content">
             <div className="main-content-left">
+                <h2>Get In Touch</h2>
                 <ContactForm />
             </div>
             <div className="main-pic">
