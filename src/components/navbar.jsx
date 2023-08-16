@@ -23,11 +23,11 @@ export default function ButtonAppBar() {
     }
     let login = {
         textDecoration: "none",
-        color: "#000",
-        backgroundColor: "#11FF9B",
+        color: "#FFF",
+        backgroundColor: "#e73c7e",
         padding: "8px 15px",
         borderRadius: "8px",
-        ":hover": { backgroundColor: "#11FF9B" },
+        ":hover": { backgroundColor: "#e73c7e" },
         boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
         cursor: "pointer"
     }

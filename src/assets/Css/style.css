@@ -7,3 +7,22 @@
 body {
     background-color: #E5F7FF;
 }
+
+body {
+    margin: 0;
+}
+
+.landing {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300% 400%;
+    height: 100%;
+}
+
+
+.pinkbg {
+    background-color: #ffffff;
+}
+
+.bluebg {
+    background-color: #d2f3ff;
+}
