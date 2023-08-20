@@ -1,29 +1,35 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import IndexPage from '../pages/home';
-import About from '../pages/About';
+import React from 'react';
 import NavBar from '../components/navbar';
-import Contact from '../pages/Contact';
 import Footer from '../components/footer';
-import Login from '../pages/login';
-import SignUp from '../pages/SignUp';
-import Profile from '../pages/profile';
-import AdPage from '../pages/adpage';
+import Layout from '../pages/Static Pages/Layout';
+import { Route, Routes } from 'react-router-dom';
+import SignUp from "../pages/Auth Page/SignUp";
+import Login from '../pages/Auth Page/login';
+import MainDashboard from '../pages/Dashboard Page/DashbordLayout';
 
 function AllRouter() {
     return (
         <div>
-            <NavBar />
-            <Routes>
-                <Route index path='/' element={<IndexPage />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/profile' element={<Profile />} />
-                <Route path='/signup' element={<SignUp />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/adpage' element={<AdPage />} />
-            </Routes>
-            <Footer />
+            {
+                false ?
+                    (<React.Fragment><NavBar />
+                        <Layout />
+                        <Footer /></React.Fragment>)
+                    : (<React.Fragment>
+                        {
+                            false ?
+                                <React.Fragment>
+                                    <Routes>
+                                        <Route path='/login' element={<Login />} />
+                                        <Route path='/signup' element={<SignUp />} />
+                                    </Routes>
+                                </React.Fragment>
+                                : (<React.Fragment>
+                                    <MainDashboard />
+                                </React.Fragment>)
+                        }
+                    </React.Fragment>)
+            }
         </div>
     )
 }

@@ -70,7 +70,6 @@ export default function ButtonAppBar() {
                         >
                             <MenuItem><Link style={normal} to='/'>Home</Link></MenuItem>
                             <MenuItem><Link style={normal} to='/about'>About</Link></MenuItem>
-                            <MenuItem><Link style={normal} to='/contact'>Contact</Link></MenuItem>
                             <MenuItem><Link style={signup} to='/signup'>Sign Up</Link></MenuItem>
                             <MenuItem><Link style={login} to='/login'>Log In</Link></MenuItem>
                         </Menu>
@@ -94,7 +93,6 @@ export default function ButtonAppBar() {
                     <Box sx={{ display: { xs: "none", sm: "flex" }, alignItems: "center" }}>
                         <Link style={normal} to='/'>Home</Link>
                         <Link style={normal} to='/about'>About</Link>
-                        <Link style={normal} to='/contact'>Contact</Link>
                         <Link style={signup} to='/signup'>Sign Up</Link>
                         <Link style={login} to='/login'>Log In</Link>
                     </Box>

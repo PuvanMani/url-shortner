@@ -1,16 +1,16 @@
 import React from "react";
-import "../assets/Css/style.css";
+import "../../assets/Css/style.css";
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
-import ActionAreaCard from "../components/card";
-import profit from "../assets/image/profit.jpg";
-import instantpay from "../assets/image/instantpay.jpg";
-import cutomer from "../assets/image/cutomersupport.jpg";
-import earn from "../assets/image/earn.jpg";
-import urlshortner from "../assets/image/urlshortner.jpg";
-import paypal from "../assets/image/paypal.jpg";
-import gpay from "../assets/image/gpay.jpg";
-import ppay from "../assets/image/phonepay.jpg";
-import paytm from "../assets/image/paytm.jpg";
+import ActionAreaCard from "../../components/card";
+import profit from "../../assets/image/profit.jpg";
+import instantpay from "../../assets/image/instantpay.jpg";
+import cutomer from "../../assets/image/cutomersupport.jpg";
+import earn from "../../assets/image/earn.jpg";
+import urlshortner from "../../assets/image/urlshortner.jpg";
+import paypal from "../../assets/image/paypal.jpg";
+import gpay from "../../assets/image/gpay.jpg";
+import ppay from "../../assets/image/phonepay.jpg";
+import paytm from "../../assets/image/paytm.jpg";
 import AdsClickIcon from '@mui/icons-material/AdsClick';
 import PersonIcon from '@mui/icons-material/Person';
 import PaidIcon from '@mui/icons-material/Paid';
@@ -19,6 +19,7 @@ import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 import { inputLabelClasses } from "@mui/material/InputLabel";
 import { styled } from "@mui/material/styles";
 import { Block } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 
 
@@ -61,7 +62,7 @@ function IndexPage() {
         borderRadius: "8px",
         boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
         ":hover": { backgroundColor: "#e73c7e" },
-        cursor: "pointer"
+        cursor: "pointer",
     }
     let signup = {
         textDecoration: "none",
@@ -69,6 +70,7 @@ function IndexPage() {
         backgroundColor: "#FFF",
         px: "15px",
         py: "8px",
+
         borderRadius: "8px",
         mr: "20px",
         boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
@@ -87,8 +89,8 @@ function IndexPage() {
                     </Grid>
 
                     <Grid item xs={12} sx={{ textAlign: 'center' }}>
-                        <Button sx={signup}>Sign Up</Button>
-                        <Button sx={login}>Log in</Button>
+                        <Button sx={signup} > <Link style={{ textDecoration: "none", color: "inherit", padding: "0px 5px" }} to='/signup'>Sign Up</Link></Button>
+                        <Button sx={login}><Link style={{ textDecoration: "none", color: "inherit", padding: "0px 5px" }} to='/login'>Log In</Link></Button>
                     </Grid>
 
                     <Grid item xs={12} sx={{ mt: "30px", textAlign: "center" }}>

@@ -1,11 +1,11 @@
 import React from "react";
-import "../assets/Css/style.css";
+import "../../assets/Css/style.css";
 import { Box, Grid, Typography } from "@mui/material";
-import abt1 from "../assets/image/abt1.jpg"
-import abt2 from "../assets/image/abt2.jpg"
-import abt3 from "../assets/image/abt3.jpg"
-import abt4 from "../assets/image/abt4.jpg"
-import abt5 from "../assets/image/abt5.jpg"
+import abt1 from "../../assets/image/abt1.jpg"
+import abt2 from "../../assets/image/abt2.jpg"
+import abt3 from "../../assets/image/abt3.jpg"
+import abt4 from "../../assets/image/abt4.jpg"
+import abt5 from "../../assets/image/abt5.jpg"
 function About() {
     let data = [
         {
